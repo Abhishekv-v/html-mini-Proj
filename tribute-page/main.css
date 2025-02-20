@@ -1,0 +1,65 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+h1, h4, p {
+  color: #AAAAAA;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+}
+  
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+}
+.arrow::after,
+.arrow::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    left: 12px;
+    top: 5px
+}
+.arrow::after {
+    top: 14px
+}
+
+.container {
+    margin-top: 50px;
+}
+
+
+
